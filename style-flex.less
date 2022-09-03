@@ -1,0 +1,90 @@
+body {
+    background: steelblue;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    .flex-block {        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        // flex-flow: row wrap;
+        min-height: 100px;
+        padding: 15px;
+        background: rgba(240, 240, 240, 1);
+        display: none;
+        .item {
+            display: flex;
+            align-items: center;
+            align-content: center;
+            justify-content: center;
+            //flex-basis: 100px;
+            //flex-grow: 1;
+            //flex-shrink: 1;
+            font-weight: 800;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            padding: 10px;
+            &.item-1 {
+                //align-self: flex-start;
+                //flex-grow: 5;
+                background: red;
+            }
+            &.item-2 {
+                background: green;
+            }
+            &.item-3 {
+                background: blue;
+            }
+            &.item-4 {
+                background: purple;
+            }
+            &.item-5 {
+                background: yellow;
+            }
+            &.item-6 {
+                background: violet;
+            }
+            &.item-7 {
+                background: pink
+            }
+            &.item-8 {
+                background: orange;
+            }
+        }
+    }
+    .grid-block {
+        display: grid;
+        .item {
+            &.item-1 {
+                background: red;
+            }
+            &.item-2 {
+                background: green;
+            }
+            &.item-3 {
+                background: blue;
+            }
+            &.item-4 {
+                background: purple;
+            }
+            &.item-5 {
+                background: yellow;
+            }
+            &.item-6 {
+                background: violet;
+            }
+            &.item-7 {
+                background: pink
+            }
+            &.item-8 {
+                background: orange;
+            }
+        }
+    }
+}
